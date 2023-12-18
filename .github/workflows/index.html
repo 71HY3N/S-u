@@ -1,43 +1,206 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ </title>
+    <link href="css/dinhdang.css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/24d9f926c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+            <img src="img/logo.png" class="logo">
+        <nav class="navbar">
+            <a class="active" href="#home"> TRANG CHỦ </a>
+            <a href="gioithieu.html" target="page"> GIỚI THIỆU </a> 
+            <a href="sanpham.html" target="page"> SẢN PHẨM </a>
+            <a href="lienhe.html" target="page"> LIÊN HỆ </a>
+        </nav>
+ 
+        <div class="icons">
+            <i class="fas fa-solid fa-bars" id="menu-bars"></i>
+            <i class="fas fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a href="#" class="fas fa-solid fa-cart-shopping"></a>
+            <a href="#" class="fas fa-regular fa-user"></a>
+        </div>
+        <!-- search form -->
+    </header>
+    <form action="" id="search-form"> 
+    <input type="search" placeholder="Nhập để tìm kiếm..." name="" id="search-box">
+    <label for="search-box" class="fas fa-solid fa-magnifying-glass"></label>
+    <i class="fas fa-solid fa-x" id="close"></i>   
+</form>
+ <!-- home section -->
+ <section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span> Hệ thống cửa hàng thú cưng </span>
+                    <h3> LICERIA PETSHOP </h3>
+                    <p> Mua ngay để không bỏ lỡ ưu đãi </p>
+                    <a href="#" class="btn">Mua ngay</a>
+                </div>
+                <div class="image">
+                    <img src="img/Banner.png" alt="">            
+                        </div>  
+            </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span> Thực phẩm dinh dưỡng </span>
+                    <h3> dành cho chó mèo </h3>
+                    <p> Đầy đủ dưỡng chất cho bé cưng </p>
+                    <a href="#" class="btn">Mua ngay</a>
+                </div>
+                <div class="image">
+                    <img src="img/home-img-1.webp" alt="">            
+                        </div>  
+            </div>       
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span> Cát vệ sinh </span>
+                    <h3> Cát đậu nành </h3>
+                    <p> Soya Clump Kitcat 7L cho mèo </p>
+                    <a href="#" class="btn">Mua ngay</a>
+                </div>
+                <div class="image">
+                    <img src="img/home-img-2.webp"alt="">            
+                        </div>  
+            </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span> Que gặm thơm miệng </span>
+                    <h3> Làm sạch răng </h3>
+                    <p> Doggyman - nhiều kích cỡ </p>
+                    <a href="#" class="btn">Mua ngay</a>
+                </div>
+                <div class="image">
+                    <img src="img/home-img-3.webp" alt="">            
+                        </div>  
+            </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+ </section>
+ <!-- Sản phẩm -->
+ <section class="sanpham" id="sanpham">
+    <h3 class="sub-heading"> Sản phẩm cho thú cưng </h3>
+    <h1 class="heading"> Khuyến mãi </h1>
+    <div class="box-container"> 
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-1.webp" alt="">
+        <h3> Snack bổ sung vitamin, omega 3&6, ngừa búi lông Gimcat Nutri Pocket Malt & Vitamin Mix 150g cho mèo </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 150.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-2.webp" alt="">
+        <h3> Nhỏ gáy Nexgard Combo trị nội ngoại ký sinh cho mèo </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 280.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-3.webp" alt="">
+        <h3> Pate tươi The Pet cho chó mèo </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 60.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-4.webp" alt="">
+        <h3> Bọt vệ sinh đệm chân Q8 dành cho mèo </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 70.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-5.webp" alt="">
+        <h3> Pate Monge BWild 100g cho mèo trưởng thành </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 30.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
+    <div class="box"> 
+        <a href="#" class="fa-regular fa-heart"></a>
+        <a href="#" class="fa-solid fa-eye"></a>
+        <img src="img/sanpham-6.webp" alt="">
+        <h3> Hạt Royal Canin Mini Indoor Adult 1.5kg cho chó trưởng thành </h3>
+        <div class="stars"> 
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star"></i>
+            <i class="fas fa-solid fa-star-alt"></i>
+            <span> 250.000đ </span>
+            <a href="#" class="btn">Bỏ vào giỏ hàng</a>
+        </div>
+    </div>
+</div>
+ </section>
+        <!-- <article>
+        </article>    
+         -->
+        <!-- <footer>
+            THÔNG TIN LIÊN HỆ <br/>
+           <p>  123 Anywhere St., Any city, St 12345</p> 
+           <p> +123-456-789 </p> 
+           <p> nguyenkhanhhuye0508@gmail.com </p> 
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+        </footer> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"> </script>
+</body>
+</html>
